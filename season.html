@@ -1,27 +1,31 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>season</title>
-
+<title>无标题文档</title>
 <style type="text/css">
-page {
-	font-size: 100px;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+html,body{
+	height:100%;}
+page{
+	font-size:50px;
+	animation:myfirst 3s infinite;
+	display:block;
+	position:absolute;
+	widht:100%;
+	height:100%;
 }
-#c {
-	background-color:green;
+#chun {
+	background-color: #0F0;
 	animation:chun 10s infinite;
-	
 }
-#x {
-	background-color:red;
+#xia {
+	background-color: #F00;
 	animation:xia 10s infinite;
 }
-#q {
+#qiu{
 	background-color:white;
 	animation:qiu 10s infinite;
 }
-#d {
+#dong{
 	background-color:black;
 	color:white;
 	animation:dong 10s infinite;
@@ -30,14 +34,36 @@ page {
 	0%{background: black;opacity:0;}
     20%{background: green;opacity:100;}
     40%{opacity:0;}
-	60%{opacity:0;}
-	80%{opacity:0;}
 	100%{opacity:0;}
 }
 @keyframes xia{
     0%{opacity:0;}
     20%{background:green;opacity:0;}
     40%{background:red;opacity:100;}
+	60%{opacity:0;}
+	100%{opacity:0;}
+}
+@keyframes qiu{
+	0%{opacity:0;}
+	40%{opacity:0;}
+	60%{opacity:100;}
+	80%{opacity:0;}
+}
+@keyframes dong{
+	0%{opacity:0;}
+	60%{opacity:0;}
+	80%{opacity:100;}
+	100%{opacity:0;}
+}
+</style></head>
+
+<body >
+<page id="chun">春</page>
+<page id="xia">夏</page>
+<page id="qiu">秋</page>
+<page id="dong">冬</page>
+</body>
+</html>
 	60%{opacity:0;}
 	80%{opacity:0;}
 	100%{opacity:0;}
